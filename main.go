@@ -118,6 +118,8 @@ func (r Running) TrainingInfo() InfoMessage {
 
 	// Дополним информацию о типе тренировки
 	info.TrainingType = r.TrainingType
+	return info
+
 }
 
 // Константы для расчета потраченных килокалорий при ходьбе.
@@ -151,6 +153,8 @@ func (w Walking) TrainingInfo() InfoMessage {
 
 	// Дополним информацию о типе тренировки
 	info.TrainingType = w.TrainingType
+	return info
+
 }
 
 // Константы для расчета потраченных килокалорий при плавании.
@@ -197,6 +201,8 @@ func (s Swimming) TrainingInfo() InfoMessage {
 
 	// Дополним информацию о типе тренировки
 	info.TrainingType = s.TrainingType
+	return info
+
 }
 
 // ReadData возвращает информацию о проведенной тренировке.
